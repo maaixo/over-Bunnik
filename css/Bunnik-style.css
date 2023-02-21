@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+[class*="col-"] {
+    box-sizing: border-box;
+    margin: 5% 0;
+    padding: 3%;
+    border-radius: 10px;
+    background-color: #FBD696;
+}
+
+.col-9 {
+    background-color: #f3bc5d;
+}
+
+body {
+    margin: 2%;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+header {
+    margin: 0 auto;
+    padding-top: 25px;
+    height: 100px;
+    background-image: url('../afbeelding/banner-Bunnik.png');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: 230px 100px;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-size: 2.5em;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    color: #7C520A;
+}
+
+h3, h4 {
+    margin: 2% 0;
+    color: #FFFFFF;
+}
+
+aside {
+    margin: 2% 0;
+    padding: 1% 0;
+}
+
+img {
+    display: block;
+    margin: 2% auto;
+    min-width: 30%;
+    max-width: 60%;
+}
+
+footer {
+    text-align: center;
+    font-size: small;
+    color: #978D7C;
+}
+
+@media only screen and (min-width: 600px) {
+    [class*="col-"] {
+        margin: 2% auto;
+        padding: 4%;
+    }
+
+    header {
+        padding-top: 35px;
+        height: 120px;
+        background-size: 250px 120px;
+    }
+
+    img {
+        min-width: 40%;
+        max-width: 40%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    [class*="col-"] {
+        float: left;
+        margin: 2%;
+        padding: 2%;
+    }
+
+    header {
+        padding-top: 40px;
+        height: 140px;
+        background-size: 300px 140px;
+    }
+
+    .col-2 {
+        width: 16.66%;
+    }
+
+    aside {
+        word-wrap: break-word;
+    }
+
+    .col-9 {
+        width: 75%;
+    }
+
+    p {
+        width: 60%;
+    }
+
+    img {
+        float: right;
+        min-width: 35%;
+        max-width: 35%;
+    }
+
+    footer {
+        float: none;
+    }
+}
